@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Committee Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-blue-100 min-h-screen py-8 px-4">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Online Nominations Form
+</h1>
+            <p class="text-gray-600">Please fill in the committee positions below</p>
+            <div class="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                <p class="text-sm text-amber-800"><strong>NOTE:</strong> Write only one name in each space.</p>
+            </div>
+        </div>
+        
+        <form id="committeeForm" class="space-y-8">
+            <!-- Leadership Positions -->
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold text-blue-800 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                    Leadership Positions
+                </h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="chairperson" class="block text-sm font-medium text-gray-700 mb-2">Chairperson *</label>
+                        <input type="text" id="chairperson" name="chairperson" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter chairperson name">
+                    </div>
+                    <div>
+                        <label for="viceChairperson" class="block text-sm font-medium text-gray-700 mb-2">Vice-Chairperson *</label>
+                        <input type="text" id="viceChairperson" name="viceChairperson" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter vice-chairperson name">
+                    </div>
+                    <div>
+                        <label for="secretary" class="block text-sm font-medium text-gray-700 mb-2">Secretary *</label>
+                        <input type="text" id="secretary" name="secretary" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter secretary name">
+                    </div>
+                    <div>
+                        <label for="viceSecretary" class="block text-sm font-medium text-gray-700 mb-2">Vice-Secretary *</label>
+                        <input type="text" id="viceSecretary" name="viceSecretary" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter vice-secretary name">
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                    <div class="grid md:grid-cols-3 gap-3">
+                        <input type="text" name="leadershipSub1" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 1">
+                        <input type="text" name="leadershipSub2" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 2">
+                        <input type="text" name="leadershipSub3" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Treasurer Section -->
+            <div class="bg-green-50 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold text-green-800 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+                    </svg>
+                    Treasury Department
+                </h2>
+                <div class="mb-4">
+                    <label for="treasurer" class="block text-sm font-medium text-gray-700 mb-2">Treasurer *</label>
+                    <input type="text" id="treasurer" name="treasurer" required
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-200"
+                           placeholder="Enter treasurer name">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                    <div class="grid md:grid-cols-3 gap-3">
+                        <input type="text" name="treasurySub1" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 1">
+                        <input type="text" name="treasurySub2" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 2">
+                        <input type="text" name="treasurySub3" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition duration-200"
+                               placeholder="Member 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ministry Coordinators -->
+            <div class="space-y-6">
+                
+                
+                <!-- Music and Arts -->
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-purple-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM15.657 6.343a1 1 0 011.414 0A9.972 9.972 0 0119 12a9.972 9.972 0 01-1.929 5.657 1 1 0 11-1.414-1.414A7.971 7.971 0 0017 12c0-1.594-.471-3.078-1.343-4.243a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        Music and Arts
+                    </h3>
+                    <div class="mb-4">
+                        <label for="musicCoordinator" class="block text-sm font-medium text-gray-700 mb-2">Music and Arts Coordinator *</label>
+                        <input type="text" id="musicCoordinator" name="musicCoordinator" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter coordinator name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <input type="text" name="musicSub1" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 1">
+                            <input type="text" name="musicSub2" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 2">
+                            <input type="text" name="musicSub3" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Missions and Evangelism -->
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-red-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                        </svg>
+                        Missions and Evangelism
+                    </h3>
+                    <div class="mb-4">
+                        <label for="missionsCoordinator" class="block text-sm font-medium text-gray-700 mb-2">Missions and Evangelism Coordinator *</label>
+                        <input type="text" id="missionsCoordinator" name="missionsCoordinator" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter coordinator name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <input type="text" name="missionsSub1" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 1">
+                            <input type="text" name="missionsSub2" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 2">
+                            <input type="text" name="missionsSub3" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discipleship -->
+                <div class="bg-indigo-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-indigo-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Discipleship
+                    </h3>
+                    <div class="mb-4">
+                        <label for="discipleshipCoordinator" class="block text-sm font-medium text-gray-700 mb-2">Discipleship Coordinator *</label>
+                        <input type="text" id="discipleshipCoordinator" name="discipleshipCoordinator" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter coordinator name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <input type="text" name="discipleshipSub1" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 1">
+                            <input type="text" name="discipleshipSub2" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 2">
+                            <input type="text" name="discipleshipSub3" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prayers -->
+                <div class="bg-yellow-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-yellow-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                        Prayers
+                    </h3>
+                    <div class="mb-4">
+                        <label for="prayersCoordinator" class="block text-sm font-medium text-gray-700 mb-2">Prayers Coordinator *</label>
+                        <input type="text" id="prayersCoordinator" name="prayersCoordinator" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter coordinator name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <input type="text" name="prayersSub1" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 1">
+                            <input type="text" name="prayersSub2" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 2">
+                            <input type="text" name="prayersSub3" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media and Publicity -->
+                <div class="bg-teal-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-teal-800 mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                        </svg>
+                        Media and Publicity
+                    </h3>
+                    <div class="mb-4">
+                        <label for="mediaCoordinator" class="block text-sm font-medium text-gray-700 mb-2">Media and Publicity Coordinator *</label>
+                        <input type="text" id="mediaCoordinator" name="mediaCoordinator" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200"
+                               placeholder="Enter coordinator name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Sub-Committee Members (at least 3 names) *</label>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <input type="text" name="mediaSub1" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 1">
+                            <input type="text" name="mediaSub2" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 2">
+                            <input type="text" name="mediaSub3" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200"
+                                   placeholder="Member 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center pt-6">
+                <button type="submit"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-lg">
+                    Submit Committee Registration
+                </button>
+            </div>
+        </form>
+        
+        <div id="successMessage" class="hidden mt-8 p-6 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+            <div class="flex items-center justify-center">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-medium text-lg">Committee registration submitted successfully! 🙏</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('committeeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Convert form data to object
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Simulate processing
+            const submitButton = document.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Submitting...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                // Hide form and show success message
+                document.getElementById('committeeForm').style.display = 'none';
+                document.getElementById('successMessage').classList.remove('hidden');
+                
+                // Log the committee data (in a real app, this would be sent to a server)
+                console.log('Committee Registration Data:', data);
+                
+                // Reset button (though form is hidden)
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+        
+        // Add smooth focus animations
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.classList.add('transform', 'scale-105');
+            });
+            
+            input.addEventListener('blur', function() {
+                this.classList.remove('transform', 'scale-105');
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'984b517593e1f65a',t:'MTc1ODgxMTY2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
